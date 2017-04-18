@@ -1,0 +1,21 @@
+﻿a {
+    cursor: pointer;
+}
+
+.help-block {
+    font-size: 12px;  
+}
+
+.jumbotron {
+    background-color: #26ACE2 !important;
+}
+
+html {
+  background-image: url("https://pbs.twimg.com/profile_images/1554932805/Logo.png");
+  background-color: #a5ce3a;
+  margin: 300px;
+  height: auto;
+  width: auto;
+  background-position: center;
+  background-attachment: fixed; 
+}  

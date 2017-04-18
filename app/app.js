@@ -1,0 +1,1 @@
+var meuApp = angular.module ('meuApp', ['ngMask']);

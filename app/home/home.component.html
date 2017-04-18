@@ -1,0 +1,25 @@
+﻿<div class="col-md-12">
+    <p>Olá, {{currentUser.nomeCompleto}}! Você está logado!!</p>
+    <p><a [routerLink]="['/login']">Sair</a></p>
+    <h2 class="text-center">Listagem de Candidatos</h2>
+    <table class="table table-striped">
+      <tr>
+        <th>Nome Completo</th>
+        <th>E-mail</th>
+        <th>Telefone</th>
+        <th>Funcionalidade</th>
+      </tr>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{user.nomeCompleto}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.telefone}}</td>
+        <td><a class="btn btn-danger" (click)="deleteUser(user.id)">Apagar</a></td><br>
+        <td><a [routerLink]="['/edit', user.id]" class="btn btn-info" (click)="editUser(editar.id)">Editar</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
